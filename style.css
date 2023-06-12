@@ -6,111 +6,154 @@
 
 .container {
     width: 100%;
-    /* margin: 0 auto; */
-    /* background-color: aqua; */
 }
 
-.hrtag {
-    /* border: 0.2px solid black; */
-    box-shadow: 1px 2px 5px;
-}
-
-/* header section start */
-header {
-    margin: 20px 5%;
-}
-
-header .logo {
-    width: 30%;
-    display: inline-block;
-    /* background-color: yellowgreen; */
-}
-
-header .logo img {
-    height: 110px;
-    margin: 5px 20px;
-}
-
-header nav {
-    width: 70%;
-    /* background-color: blueviolet; */
-    float: right;
-}
-
-header nav .top-header {
-    /* background-color: yellow; */
-    text-align: end;
-    margin-top: 20px;
-}
-
-header nav .top-header a {
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px 8px;
-    color: black;
-}
-
-header nav .navbar {
-    /* background-color: violet; */
-    text-align: end;
-    margin-top: 20px;
-}
-
-header nav .navbar ul li {
+ul{
     list-style: none;
-    display: inline-block;
-    margin: 10px 10px;
 }
-
-header nav .navbar ul li a {
+a{
     text-decoration: none;
-    text-transform: uppercase;
-
 }
 
-/* header section start */
+/* header */
+.row{
+    width: 100%;
+}
+.row .logo{
+    float: left;
+    padding: 15px 70px;
+}
+.row .header{
+    text-align: right;
+    float: right;
+    padding: 30px 100px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.row .header-top span{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.row .header-bottom .nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
 
 /* main section start */
-main section.slider .slide {
-    /* width: 100%; */
+/* banner section */
+.banner-section{
+    position: relative;
     height: 500px;
-    /* background-color: rgb(69, 35, 69); */
+}
+.banner-section .banner-text{
+    width: 30%;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+.banner-section .banner-text h2{
+    font-size: 54px;
+    padding: 10px 20px;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    background-color: rgb(255, 195, 195);
+}
+.banner-section .banner-text p{
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 20px;
+    padding: 10px 20px;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
-main section .slide .slide-text {
-    /* background-color: yellowgreen; */
-    margin-top: 200px;
-    padding-left: 100px;
-    width: 40%;
+.banner-section .banner-image{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
+.banner-section .banner-image img{
+    width: 700px;
+}
+
+/* about us section */
+.about-us{
+    width: 1180px;
+    margin: 50px auto;
+}
+.about-us .about-img img{
+    width: 400px;
     float: left;
+    padding: 0 20px;
 }
-main section .slide .slide-text h2{
-    font-size: 48px;
-    color: rgb(255, 43, 43);
-    border-bottom: 1px solid red;
-    border-left: 1px solid red;
-    padding: 15px;
-    background-color: rgb(255, 193, 78);
+.about-us .about-text{
+    /* padding-left: 50px; */
 }
-main section .slide .slide-text p{
-    border-bottom: 1px solid red;
-    border-left: 1px solid red;
-    padding: 15px;
+.about-us .about-text h2{
+    font-size: 34px;
+    padding-bottom: 10px;
 }
-
-main section .slide .slide-image {
-    /* background-color: violet; */
+.about-us .about-text p{
+    font-size: 18px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.about-us .about-text a{
+    display: inline-block;
+    border: 2px solid gray;
+    padding: 15px 40px;
+    border-radius: 4px;
     margin-top: 20px;
-    width: 60%;
-    float: right;
-    top: 20px;
+    text-transform: uppercase;
 }
 
-main section .slide .slide-image img {
-    /* width: 800px; */
-    height: 450px;
+/* our products section */
+.products{
+    width: 1180px;
+    margin: 50px auto;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+    height: 700px;
+}
+.products-title{
+    text-align: center;
+}
+.products-title h2{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.products-title h3{
+    font-size: 34px;
+    padding-bottom: 50px;
+}
+.products-card .card{
+    width: 23%;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 1%;
+    /* background-color: brown; */
+    overflow: hidden;
+    box-shadow: 0px 2px 2px black;
+    padding-bottom: 30px;
+}
+.products-card .card img{
     width: auto;
-    padding-left: 50px;
 }
-
-/* main section end */
+.products-card .card h3{
+    font-size: 24px;
+    padding: 10px 0;
+}
+.products-card .card p{
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 20px 30px 20px;
+}
+.products-card .card a{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
