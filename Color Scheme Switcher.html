@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Switcher</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            border: 4px solid black;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+
+        .button:hover {
+            transform: rotate(180deg);
+            border-radius: 50%;
+        }
+
+        #red {
+            background: red;
+            ;
+        }
+
+        #orange {
+            background: orange;
+        }
+
+        #yellow {
+            background: yellow;
+        }
+
+        #green {
+            background: green;
+        }
+
+        #blue {
+            background: blue;
+        }
+
+        #indigo {
+            background: indigo;
+        }
+
+        #violet {
+            background: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Color Scheme Switcher</h1>
+        <div class="box">
+            <span class="button" id="red"></span>
+            <span class="button" id="orange"></span>
+            <span class="button" id="yellow"></span>
+            <span class="button" id="green"></span>
+            <span class="button" id="blue"></span>
+            <span class="button" id="indigo"></span>
+            <span class="button" id="violet"></span>
+        </div>
+    </div>
+
+
+    <script>
+        const buttons = document.querySelectorAll('.button');
+        // console.log(buttons);
+        const body = document.querySelector('body');
+        // console.log(body);
+
+        buttons.forEach(function (btn) {
+            btn.addEventListener('mouseenter', function (btnvalue) {
+                // console.log(btnvalue);
+                // console.log(btnvalue.target);
+                if (btnvalue.target.id === "red") {
+                    body.style.backgroundColor = btnvalue.target.id;
+                }
+                if (btnvalue.target.id === "orange") {
+                    body.style.backgroundColor = btnvalue.target.id;
+                }
+                if (btnvalue.target.id === "yellow") {
+                    body.style.backgroundColor = btnvalue.target.id;
+                }
+                if (btnvalue.target.id === "green") {
+                    body.style.backgroundColor = btnvalue.target.id;
+                }
+                if (btnvalue.target.id === "blue") {
+                    body.style.backgroundColor = btnvalue.target.id;
+                }
+                if (btnvalue.target.id === "indigo") {
+                    body.style.backgroundColor = btnvalue.target.id;
+                }
+                if (btnvalue.target.id === "violet") {
+                    body.style.backgroundColor = btnvalue.target.id;
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        const buttons = document.querySelectorAll(".button");
+        const body = document.querySelector("body");
+
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function (e) {
+                if (e.target.id === 'grey') {
+                    body.style.backgroundColor = e.target.id;
+                }
+                if (e.target.id === 'white') {
+                    body.style.backgroundColor = e.target.id;
+                }
+                if (e.target.id === 'blue') {
+                    body.style.backgroundColor = e.target.id;
+                }
+                if (e.target.id === 'yellow') {
+                    body.style.backgroundColor = e.target.id;
+                }
+            });
+        });
+
+    </script> -->
+</body>
+
+</html>
